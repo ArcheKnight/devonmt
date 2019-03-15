@@ -1,0 +1,12 @@
+<footer>
+    <div class="ui bottom fixed menu">
+        <div class="item">Footer</div>
+    </div>
+</footer>
+
+<!-- Add default scripts here -->
+<% if (pageVars.pageScripts) { %>
+    <% for (let pageScript of pageVars.pageScripts) { %>
+        <%- include('../scripts/' + pageScript) %>
+    <% } %>
+<% } %>
