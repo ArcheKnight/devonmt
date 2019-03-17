@@ -1,42 +1,42 @@
-{   
-    "/": {
-        "name": "home",
-        "title": "Home",
-        "body": "landing.ejs",
-        "icon": "",
-        "styles": "",
-        "scripts": ""
-    },
-    "/aboutus": {
-        "name": "aboutus",
-        "title": "About Us",
-        "body": "",
-        "icon": "",
-        "styles": "",
-        "scripts": ""
-    },
-    "/links": {
-        "name": "links",
-        "title": "Links",
-        "body": "",
-        "icon": "",
-        "styles": "",
-        "scripts": ""
-    },
-    "/login": {
-        "name": "login",
-        "title": "Login",
-        "body": "",
-        "icon": "",
-        "styles": "",
-        "scripts": ""
-    },
-    "/signup": {
-        "name": "signup",
-        "title": "Sign Up",
-        "body": "",
-        "icon": "",
-        "styles": "",
-        "scripts": ""
-    }
+{
+	"/": {
+		"name": "home",
+		"title": "Home",
+		"body": "landing.ejs",
+		"icon": "",
+		"styles": "",
+		"scripts": ""
+	},
+	"/aboutus": {
+		"name": "aboutme",
+		"title": "About Me",
+		"body": "",
+		"icon": "",
+		"styles": "",
+		"scripts": ""
+	},
+	"/links": {
+		"name": "links",
+		"title": "Links",
+		"body": "",
+		"icon": "",
+		"styles": "",
+		"scripts": ""
+	},
+	"/login": {
+		"name": "login",
+		"title": "Login",
+		"body": "",
+		"icon": "",
+		"styles": "",
+		"scripts": ""
+	},
+	"/signup": {
+		"name": "signup",
+		"title": "Sign Up",
+		"body": "",
+		"icon": "",
+		"styles": "",
+		"scripts": ""
+	}
 }

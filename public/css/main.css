@@ -1,5 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: tan;
+	margin: 0;
+	padding: 0;
+	background-color: tan;
+}
+
+.ui.menu {
+	border-radius: 0;
+}
+
+.ui.segment:first-child {
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
 }
