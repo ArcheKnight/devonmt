@@ -8,8 +8,8 @@ body {
 	border-radius: 0;
 }
 
-.ui.segment:first-child {
-	border-radius: 0;
-	margin: 0;
-	padding: 0;
+.landing__container {
+	width: 100%;
+	background-image: url('imgs/codeComputer.jpg');
+	background-size: cover;
 }
