@@ -5,7 +5,8 @@
 		"body": "landing.ejs",
 		"icon": "",
 		"styles": "",
-		"scripts": ""
+		"scripts": "",
+		"image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
 	},
 	"/aboutus": {
 		"name": "aboutme",
@@ -13,7 +14,8 @@
 		"body": "",
 		"icon": "",
 		"styles": "",
-		"scripts": ""
+		"scripts": "",
+		"image": ""
 	},
 	"/links": {
 		"name": "links",
@@ -21,7 +23,8 @@
 		"body": "",
 		"icon": "",
 		"styles": "",
-		"scripts": ""
+		"scripts": "",
+		"image": ""
 	},
 	"/login": {
 		"name": "login",
@@ -29,7 +32,8 @@
 		"body": "",
 		"icon": "",
 		"styles": "",
-		"scripts": ""
+		"scripts": "",
+		"image": ""
 	},
 	"/signup": {
 		"name": "signup",
@@ -37,6 +41,7 @@
 		"body": "",
 		"icon": "",
 		"styles": "",
-		"scripts": ""
+		"scripts": "",
+		"image": ""
 	}
 }
