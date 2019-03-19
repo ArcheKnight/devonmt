@@ -1,4 +1,7 @@
+/* global $ */
+
 initHeader();
+initFooter();
 
 function initHeader() {
     const marginHeight = $('#topNavMenu').height();
@@ -6,12 +9,31 @@ function initHeader() {
     
     $(window).scroll(function() {
         let height = $(window).scrollTop();
-        console.log(height);
-        console.log(marginHeight);
-        if(height > 1) {
-            $('#topNavMenu').css("background-color", "transparent"); // Add class to fix and then remove, don't change style
+        if(height > marginHeight / 2) {
+            $('#topNavMenu').removeClass('large');
+            $('#topNavMenu').addClass('tiny scrolled borderless');
         } else {
-            $('#topNavMenu').css("background-color", "initial");
+            $('#topNavMenu').removeClass('tiny scrolled borderless');
+            $('#topNavMenu').addClass('large');
         }
     })
+}
+
+function initFooter() {
+    $(window).scroll(function() {
+        let height = $(window).scrollTop() + $(window).height();
+        if(height === getDocHeight()) {
+            $('#bottomNavMenu').removeClass('clear');
+        } else {
+            $('#bottomNavMenu').addClass('clear');
+        }
+    })
+}
+
+function getDocHeight() {
+    let D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight);
 }

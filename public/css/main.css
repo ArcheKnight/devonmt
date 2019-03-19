@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: tan;
+	background-color: gray;
 }
 
 #header {
@@ -13,4 +13,17 @@ body {
 
 .ui.menu {
 	border-radius: 0;
+}
+
+#topNavMenu,
+#bottomNavMenu {
+	transition: .1s ease-in-out;
+}
+
+#topNavMenu.scrolled {
+	background-color: transparent !important;
+}
+
+#bottomNavMenu.clear {
+	opacity: 0;
 }

@@ -1,14 +1,13 @@
 const router = require('express').Router();
-const helpers = require('../middleware/helpers');
 const controllers = require('../controllers/main');
 
 // GET landing page
-router.get('/', helpers.getPageVars, (req, res) => {
+router.get('/', (req, res) => {
     controllers.landing(req, res)
 });
 
 // GET login page
-router.get('/login', helpers.getPageVars, (req, res) => {
+router.get('/login', (req, res) => {
     controllers.getLogin(req, res);
 })
 
@@ -18,7 +17,7 @@ router.post('/login', (req, res) => {
 })
 
 // GET sign up page
-router.get('/login', helpers.getPageVars, (req, res) => {
+router.get('/login', (req, res) => {
     controllers.getSignUp(req, res);
 })
 
