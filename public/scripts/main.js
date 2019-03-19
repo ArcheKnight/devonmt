@@ -10,11 +10,11 @@ function initHeader() {
     $(window).scroll(function() {
         let height = $(window).scrollTop();
         if(height > marginHeight / 2) {
-            $('#topNavMenu').removeClass('large');
+            //$('#topNavMenu').removeClass('');
             $('#topNavMenu').addClass('tiny scrolled borderless');
         } else {
             $('#topNavMenu').removeClass('tiny scrolled borderless');
-            $('#topNavMenu').addClass('large');
+            //$('#topNavMenu').addClass('');
         }
     })
 }
