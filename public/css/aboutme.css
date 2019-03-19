@@ -1,0 +1,24 @@
+#aboutme-header div {
+	border-radius: 0;
+	background-color: var(--primary-color) !important;
+}
+
+#aboutme-header div div h1 {
+	color: var(--white-color) !important;
+}
+
+.portrait {
+    border-radius: 20%;
+    width: 20rem !important;
+    border: 3px var(--secondary-color) solid;
+}
+
+.header {
+    font-size: 4rem !important;
+}
+
+#aboutme-text {
+    font-size: 1.3rem !important;
+    background-color: var(--dark-gray-color) !important;
+    color: var(--light-gray-color) !important;
+}

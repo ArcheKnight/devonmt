@@ -11,17 +11,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
 	helpers.getPageVars(req, res, next);
-	
-	next();
 })
 
 app.use('/', mainRoutes);
-
-/*
-app.get('*', (req, res) => {
-	res.send('This is an error page');
-});
-*/
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

@@ -2,9 +2,10 @@ const router = require('express').Router();
 const controllers = require('../controllers/main');
 
 // GET landing page
-router.get('/', (req, res) => {
-    controllers.landing(req, res)
-});
+router.get('/', controllers.landing);
+
+// GET aboutme page
+router.get('/aboutme', controllers.aboutme);
 
 // GET login page
 router.get('/login', (req, res) => {
@@ -25,5 +26,15 @@ router.get('/login', (req, res) => {
 router.post('/login', (req, res) => {
     controllers.postSignUp(req, res);
 })
+
+// GET 404 page
+router.get('/404', (req, res) => {
+    res.render('templates/layout', { pageVars: req.pageVars });
+})
+
+// GET error page
+router.use((req, res) => {
+	res.status(404).redirect('/404');
+});
 
 module.exports = router;

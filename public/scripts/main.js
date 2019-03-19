@@ -4,22 +4,29 @@ initHeader();
 initFooter();
 
 function initHeader() {
-    const marginHeight = $('#topNavMenu').height();
-    $('#header').css("margin-top", marginHeight + 'px');
+    const paddingHeight = $('#topNavMenu').height();
+    $('.top-header').css("padding-top", paddingHeight + 'px');
     
     $(window).scroll(function() {
-        let height = $(window).scrollTop();
-        if(height > marginHeight / 2) {
+        let scrolled = $(window).scrollTop();
+        if(scrolled > 0) {
             //$('#topNavMenu').removeClass('');
-            $('#topNavMenu').addClass('tiny scrolled borderless');
+            $('#topNavMenu').addClass('scrolled');
         } else {
-            $('#topNavMenu').removeClass('tiny scrolled borderless');
+            $('#topNavMenu').removeClass('scrolled');
             //$('#topNavMenu').addClass('');
         }
     })
 }
 
 function initFooter() {
+    let height = $(window).scrollTop() + $(window).height();
+    if(height === getDocHeight()) {
+        $('#bottomNavMenu').removeClass('clear');
+    } else {
+        $('#bottomNavMenu').addClass('clear');
+    }
+    
     $(window).scroll(function() {
         let height = $(window).scrollTop() + $(window).height();
         if(height === getDocHeight()) {
