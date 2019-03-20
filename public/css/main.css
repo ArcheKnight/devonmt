@@ -11,11 +11,11 @@ coolors.co for saving palettes
 */
 
 :root {
-	--primary-color: #56A7CB;
-	--secondary-color: #FFB665;
-	--light-gray-color: #F4FBFF;
-	--dark-gray-color: #5B7D8C;
-	--white-color: #FFFFFF;
+	--primary-color: #56a7cb;
+	--secondary-color: #ffb665;
+	--light-gray-color: #f4fbff;
+	--dark-gray-color: #5b7d8c;
+	--white-color: #ffffff;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 #topNavMenu {
-	transition: .1s ease-in-out;
+	transition: 0.1s ease-in-out;
 	background-color: var(--light-gray-color) !important;
 }
 
@@ -34,6 +34,7 @@ body {
 }
 
 #bottomNavMenu {
+	transition: 0.1s ease-in-out;
 	background-color: var(--dark-gray-color) !important;
 }
 
@@ -45,6 +46,8 @@ body {
 	border-radius: 0;
 }
 
+/*
 .first {
 	margin-top: 15px;
 }
+*/

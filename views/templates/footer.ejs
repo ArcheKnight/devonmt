@@ -10,6 +10,6 @@
 <script src="/scripts/main.js"></script>
 <% if (pageVars.scripts) { %>
     <% for (let script of pageVars.scripts) { %>
-        <%- include('../scripts/' + script) %>
+        <%- script %>
     <% } %>
 <% } %>
